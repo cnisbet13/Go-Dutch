@@ -46,6 +46,13 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
+	<key>Fonts provided by the application</key>
+	<array>
+		<string>A little sunshine.ttf</string>
+		<string>Butter Kings.ttf</string>
+		<string>The Constellation of Heracles.ttf</string>
+		<string>Because I am Happy Regular.ttf</string>
+	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

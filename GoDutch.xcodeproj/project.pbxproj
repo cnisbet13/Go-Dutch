@@ -8,13 +8,18 @@
 
 /* Begin PBXBuildFile section */
 		96E048091BBB82600017DDC9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E048081BBB82600017DDC9 /* AppDelegate.swift */; };
-		96E0480B1BBB82600017DDC9 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0480A1BBB82600017DDC9 /* FirstViewController.swift */; };
-		96E0480D1BBB82600017DDC9 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0480C1BBB82600017DDC9 /* SecondViewController.swift */; };
 		96E048101BBB82600017DDC9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E0480E1BBB82600017DDC9 /* Main.storyboard */; };
 		96E048121BBB82600017DDC9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E048111BBB82600017DDC9 /* Assets.xcassets */; };
 		96E048151BBB82600017DDC9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E048131BBB82600017DDC9 /* LaunchScreen.storyboard */; };
 		96E048201BBB82600017DDC9 /* GoDutchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0481F1BBB82600017DDC9 /* GoDutchTests.swift */; };
 		96E0482B1BBB82600017DDC9 /* GoDutchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0482A1BBB82600017DDC9 /* GoDutchUITests.swift */; };
+		96E0483B1BBB8A540017DDC9 /* TipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0483A1BBB8A540017DDC9 /* TipTableViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		96E0483D1BBB8A7D0017DDC9 /* GroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0483C1BBB8A7D0017DDC9 /* GroupViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		96E0483F1BBCA64A0017DDC9 /* NewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E0483E1BBCA64A0017DDC9 /* NewViewController.swift */; settings = {ASSET_TAGS = (); }; };
+		96E048411BBCACF40017DDC9 /* a_little_sunshine in Resources */ = {isa = PBXBuildFile; fileRef = 96E048401BBCACF30017DDC9 /* a_little_sunshine */; settings = {ASSET_TAGS = (); }; };
+		96E048441BBCACF90017DDC9 /* because_i_am_happy in Resources */ = {isa = PBXBuildFile; fileRef = 96E048421BBCACF90017DDC9 /* because_i_am_happy */; settings = {ASSET_TAGS = (); }; };
+		96E048451BBCACF90017DDC9 /* butter_kings in Resources */ = {isa = PBXBuildFile; fileRef = 96E048431BBCACF90017DDC9 /* butter_kings */; settings = {ASSET_TAGS = (); }; };
+		96E048481BBCAD0C0017DDC9 /* the_constellation_of_heracles in Resources */ = {isa = PBXBuildFile; fileRef = 96E048471BBCAD0C0017DDC9 /* the_constellation_of_heracles */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,8 +42,6 @@
 /* Begin PBXFileReference section */
 		96E048051BBB82600017DDC9 /* GoDutch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoDutch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E048081BBB82600017DDC9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		96E0480A1BBB82600017DDC9 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		96E0480C1BBB82600017DDC9 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		96E0480F1BBB82600017DDC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		96E048111BBB82600017DDC9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E048141BBB82600017DDC9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +52,13 @@
 		96E048261BBB82600017DDC9 /* GoDutchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoDutchUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E0482A1BBB82600017DDC9 /* GoDutchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoDutchUITests.swift; sourceTree = "<group>"; };
 		96E0482C1BBB82600017DDC9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96E0483A1BBB8A540017DDC9 /* TipTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TipTableViewController.swift; sourceTree = "<group>"; };
+		96E0483C1BBB8A7D0017DDC9 /* GroupViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GroupViewController.swift; path = ../GroupViewController.swift; sourceTree = "<group>"; };
+		96E0483E1BBCA64A0017DDC9 /* NewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewViewController.swift; sourceTree = "<group>"; };
+		96E048401BBCACF30017DDC9 /* a_little_sunshine */ = {isa = PBXFileReference; lastKnownFileType = folder; path = a_little_sunshine; sourceTree = "<group>"; };
+		96E048421BBCACF90017DDC9 /* because_i_am_happy */ = {isa = PBXFileReference; lastKnownFileType = folder; path = because_i_am_happy; sourceTree = "<group>"; };
+		96E048431BBCACF90017DDC9 /* butter_kings */ = {isa = PBXFileReference; lastKnownFileType = folder; path = butter_kings; sourceTree = "<group>"; };
+		96E048471BBCAD0C0017DDC9 /* the_constellation_of_heracles */ = {isa = PBXFileReference; lastKnownFileType = folder; path = the_constellation_of_heracles; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +109,15 @@
 		96E048071BBB82600017DDC9 /* GoDutch */ = {
 			isa = PBXGroup;
 			children = (
+				96E048461BBCAD000017DDC9 /* Fonts */,
 				96E048081BBB82600017DDC9 /* AppDelegate.swift */,
-				96E0480A1BBB82600017DDC9 /* FirstViewController.swift */,
-				96E0480C1BBB82600017DDC9 /* SecondViewController.swift */,
+				96E0483A1BBB8A540017DDC9 /* TipTableViewController.swift */,
+				96E0483C1BBB8A7D0017DDC9 /* GroupViewController.swift */,
 				96E0480E1BBB82600017DDC9 /* Main.storyboard */,
 				96E048111BBB82600017DDC9 /* Assets.xcassets */,
 				96E048131BBB82600017DDC9 /* LaunchScreen.storyboard */,
 				96E048161BBB82600017DDC9 /* Info.plist */,
+				96E0483E1BBCA64A0017DDC9 /* NewViewController.swift */,
 			);
 			path = GoDutch;
 			sourceTree = "<group>";
@@ -126,6 +138,17 @@
 				96E0482C1BBB82600017DDC9 /* Info.plist */,
 			);
 			path = GoDutchUITests;
+			sourceTree = "<group>";
+		};
+		96E048461BBCAD000017DDC9 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				96E048471BBCAD0C0017DDC9 /* the_constellation_of_heracles */,
+				96E048421BBCACF90017DDC9 /* because_i_am_happy */,
+				96E048431BBCACF90017DDC9 /* butter_kings */,
+				96E048401BBCACF30017DDC9 /* a_little_sunshine */,
+			);
+			name = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,7 +256,11 @@
 			files = (
 				96E048151BBB82600017DDC9 /* LaunchScreen.storyboard in Resources */,
 				96E048121BBB82600017DDC9 /* Assets.xcassets in Resources */,
+				96E048481BBCAD0C0017DDC9 /* the_constellation_of_heracles in Resources */,
 				96E048101BBB82600017DDC9 /* Main.storyboard in Resources */,
+				96E048451BBCACF90017DDC9 /* butter_kings in Resources */,
+				96E048441BBCACF90017DDC9 /* because_i_am_happy in Resources */,
+				96E048411BBCACF40017DDC9 /* a_little_sunshine in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,9 +285,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E0480D1BBB82600017DDC9 /* SecondViewController.swift in Sources */,
+				96E0483D1BBB8A7D0017DDC9 /* GroupViewController.swift in Sources */,
 				96E048091BBB82600017DDC9 /* AppDelegate.swift in Sources */,
-				96E0480B1BBB82600017DDC9 /* FirstViewController.swift in Sources */,
+				96E0483B1BBB8A540017DDC9 /* TipTableViewController.swift in Sources */,
+				96E0483F1BBCA64A0017DDC9 /* NewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
