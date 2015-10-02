@@ -17,8 +17,20 @@ class TipTableViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
-        self.navigationItem.title = "GoDutch"
+        self.navigationController?.navigationBar.topItem?.title = "GoDutch"
+               var fontFamilies = UIFont.familyNames()
+        
+        for (var i:Int = 0; i < fontFamilies.count; i++) {
+            
+            let fontFamily: NSString = fontFamilies[i] as NSString
+            
+            let fontNames: NSArray = UIFont.fontNamesForFamilyName(fontFamilies[i] ) as NSArray
+            
+            print("Family:\(fontFamily)")
+            
+            print("\nName:\(fontNames)")
+            
+        }
         
     }
 
@@ -33,24 +45,34 @@ class TipTableViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 3
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
+        if section == 0 {
+            return 3
+        } else if section == 1 {
+            return 2
+        } else {
         return 1
+        }
     }
 
     
-    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
+ //   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
 
-        
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-        
-
-        return cell
-    }
-
+//        if indexPath.row == 0 {
+//            let cell = tableView.dequeueReusableCellWithIdentifier("mealPriceTableViewCell", forIndexPath: indexPath)
+//            return cell
+//            } else if indexPath.row == 1 {
+//        let cell = tableView.dequeueReusableCellWithIdentifier("tipSliderTableViewCell", forIndexPath: indexPath)
+//            return cell
+//        } else {
+   //         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
+     //       return cell
+       // }
+    //}
 
     /*
     // Override to support conditional editing of the table view.

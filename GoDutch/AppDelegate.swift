@@ -20,8 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let navigationBarAppearance = UINavigationBar.appearance()
         navigationBarAppearance.tintColor = UIColor.whiteColor()
         navigationBarAppearance.barTintColor = UIColor.blueColor()
-        navigationBarAppearance.titleTextAttributes = [NSForegroundColorAttributeName: UIColor.whiteColor()]
-        
+        navigationBarAppearance.titleTextAttributes = [NSFontAttributeName: UIFont(name: "Because_I_am_Happy", size: 36)!, NSForegroundColorAttributeName:UIColor.whiteColor()]
         return true
     }
 

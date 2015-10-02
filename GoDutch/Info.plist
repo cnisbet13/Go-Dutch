@@ -46,10 +46,11 @@
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
 	</array>
-	<key>Fonts provided by the application</key>
+	<key>UIAppFonts</key>
 	<array>
+		<string>Wizards Magic.ttf</string>
 		<string>A little sunshine.ttf</string>
-		<string>Butter Kings.ttf</string>
+		<string>Andes.ttf</string>
 		<string>The Constellation of Heracles.ttf</string>
 		<string>Because I am Happy Regular.ttf</string>
 	</array>

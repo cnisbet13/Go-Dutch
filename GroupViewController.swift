@@ -17,7 +17,7 @@ class GroupViewController: UITableViewController {
         // self.clearsSelectionOnViewWillAppear = false
 
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-        // self.navigationItem.rightBarButtonItem = self.editButtonItem()
+       
         self.navigationItem.title = "Go Dutch"
         
     }
@@ -31,21 +31,32 @@ class GroupViewController: UITableViewController {
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 2
+        return 1
     }
  
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 2
+        return 3
     }
 
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-
-        // Configure the cell...
-
-        return cell
+        
+        if indexPath.row == 0 {
+            let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "tipSliderTableViewCell")
+            
+            return cell
+        } else if indexPath.row == 1 {
+            let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "mealPriceTableViewCell")
+            
+            
+            return cell
+        } else {
+            let cell = UITableViewCell(style: UITableViewCellStyle.Default, reuseIdentifier: "thirdCell")
+            
+            
+            return cell
+        }
     }
     
 
