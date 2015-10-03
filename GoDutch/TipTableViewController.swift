@@ -9,14 +9,31 @@
 import UIKit
 
 class TipTableViewController: UITableViewController {
-
+    @IBOutlet weak var mealPriceTextField: UITextField!
+    @IBOutlet weak var mealStepper: UIStepper!
+    @IBOutlet weak var splitSwitch: UISwitch!
+    @IBOutlet weak var tipSwitch: UISwitch!
+    @IBOutlet weak var totalMealCost: UILabel!
+    @IBOutlet weak var costButton: UIButton!
+    @IBOutlet weak var peopleLabel: UILabel!
+    @IBOutlet weak var tipPercentageLabel: UILabel!
+    @IBOutlet weak var tipSlider: UISlider!
+    
+    var percentageVisible = false
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Uncomment the following line to preserve selection between presentations
-        // self.clearsSelectionOnViewWillAppear = false
-
-        // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
+        
+        
+        tableView.contentInset = UIEdgeInsetsMake(20, 0, 0, 0)
+        tableView.tableFooterView = UIView(frame: CGRectZero)
+        
+        mealStepper.wraps = false
+        mealStepper.autorepeat = false
+        mealStepper.maximumValue = 14
+        
+      //What fonts do we have available? 
+        
         self.navigationController?.navigationBar.topItem?.title = "GoDutch"
                var fontFamilies = UIFont.familyNames()
         
@@ -41,73 +58,97 @@ class TipTableViewController: UITableViewController {
 
     
     
+    
     // MARK: - Table view data source
 
     override func numberOfSectionsInTableView(tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
-        return 3
+        return 2
     }
 
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        if section == 0 {
-            return 3
-        } else if section == 1 {
-            return 2
+        if section == 0 || self.tipSwitch == true {
+            return 5
         } else {
-        return 1
+            return 2
         }
     }
 
     
- //   override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
-
-//        if indexPath.row == 0 {
-//            let cell = tableView.dequeueReusableCellWithIdentifier("mealPriceTableViewCell", forIndexPath: indexPath)
-//            return cell
-//            } else if indexPath.row == 1 {
-//        let cell = tableView.dequeueReusableCellWithIdentifier("tipSliderTableViewCell", forIndexPath: indexPath)
-//            return cell
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if indexPath.row == 3 {
+            percentageVisible = !percentageVisible
+            tableView.reloadData()
+        }
+    }
+    
+    
+    override func tableView(tableView: UITableView, heightForRowAtIndexPath indexPath: NSIndexPath) -> CGFloat {
+        if indexPath.row == 3 && tipSwitch == false {
+            return 0.0
+        }
+        if indexPath.row == 4 {
+            if tipSwitch.on == false  {
+                return 0.0
+            }
+            return 44.0
+        }
+            return 44.0
+    }
+    
+    
+//Slider, Stepper, and Switch Actions
+    
+    @IBAction func tipSlider(sender: UISlider) {
+        let sliderValue = Int(sender.value)
+        print("Slider changing to \(sliderValue)")
+        tipPercentageLabel.text = "\(sliderValue)%"
+    }
+    
+    @IBAction func peopleStepper(sender: UIStepper) {
+        peopleLabel.text = Int(sender.value).description
+    }
+    
+    
+    @IBAction func tipSwitchAction(sender: AnyObject) {
+        tableView.reloadData()
+        
+        
+    }
+    
+    @IBAction func mealCalculate(sender: AnyObject) {
+        
+        mealCost()
+    }
+    
+    
+    func mealCost() {
+        let mealCost = mealPriceTextField.text
+        let floatValueMeal = Double(mealCost!)
+            print(floatValueMeal)
+        
+        let peopleAtMeal = Int(mealStepper.value)
+        print(peopleAtMeal)
+        
+//        let indCost = Float(floatValueMeal!) / Int(peopleAtMeal)
+//        print(indCost)
+//        
+//        if tipSlider == false {
+//        
+//      // totalMealCost.text = Float(indCost
 //        } else {
-   //         let cell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath)
-     //       return cell
-       // }
-    //}
-
-    /*
-    // Override to support conditional editing of the table view.
-    override func tableView(tableView: UITableView, canEditRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the specified item to be editable.
-        return true
+//            let sliderValue = self.tipSlider.value/100
+//            let tipCost = indCost * sliderValue
+//            let mealCost = tipCost + indCost
+//            print(mealCost)
+//        }
+        
+        print("Meal cost is\(mealCost)")
     }
-    */
-
-    /*
-    // Override to support editing the table view.
-    override func tableView(tableView: UITableView, commitEditingStyle editingStyle: UITableViewCellEditingStyle, forRowAtIndexPath indexPath: NSIndexPath) {
-        if editingStyle == .Delete {
-            // Delete the row from the data source
-            tableView.deleteRowsAtIndexPaths([indexPath], withRowAnimation: .Fade)
-        } else if editingStyle == .Insert {
-            // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-        }    
-    }
-    */
-
-    /*
-    // Override to support rearranging the table view.
-    override func tableView(tableView: UITableView, moveRowAtIndexPath fromIndexPath: NSIndexPath, toIndexPath: NSIndexPath) {
-
-    }
-    */
-
-    /*
-    // Override to support conditional rearranging of the table view.
-    override func tableView(tableView: UITableView, canMoveRowAtIndexPath indexPath: NSIndexPath) -> Bool {
-        // Return false if you do not want the item to be re-orderable.
-        return true
-    }
-    */
+    
+    
+    
 
     /*
     // MARK: - Navigation

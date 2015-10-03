@@ -21,8 +21,6 @@
 		96E048501BBCBA3A0017DDC9 /* A little sunshine.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E0484F1BBCBA3A0017DDC9 /* A little sunshine.ttf */; settings = {ASSET_TAGS = (); }; };
 		96E048521BBCBC690017DDC9 /* Andes.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E048511BBCBC690017DDC9 /* Andes.ttf */; settings = {ASSET_TAGS = (); }; };
 		96E048541BBCBD420017DDC9 /* Wizards Magic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 96E048531BBCBD420017DDC9 /* Wizards Magic.ttf */; settings = {ASSET_TAGS = (); }; };
-		96E048561BBDFF8B0017DDC9 /* mealPriceTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E048551BBDFF8B0017DDC9 /* mealPriceTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
-		96E048581BBDFF9A0017DDC9 /* tipSliderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E048571BBDFF9A0017DDC9 /* tipSliderTableViewCell.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,8 +61,6 @@
 		96E0484F1BBCBA3A0017DDC9 /* A little sunshine.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "A little sunshine.ttf"; path = "a_little_sunshine/A little sunshine.ttf"; sourceTree = "<group>"; };
 		96E048511BBCBC690017DDC9 /* Andes.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Andes.ttf; sourceTree = "<group>"; };
 		96E048531BBCBD420017DDC9 /* Wizards Magic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Wizards Magic.ttf"; sourceTree = "<group>"; };
-		96E048551BBDFF8B0017DDC9 /* mealPriceTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = mealPriceTableViewCell.swift; path = ../mealPriceTableViewCell.swift; sourceTree = "<group>"; };
-		96E048571BBDFF9A0017DDC9 /* tipSliderTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = tipSliderTableViewCell.swift; path = ../tipSliderTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,7 +111,6 @@
 		96E048071BBB82600017DDC9 /* GoDutch */ = {
 			isa = PBXGroup;
 			children = (
-				96E048591BBE02090017DDC9 /* Tableview Cells */,
 				96E048461BBCAD000017DDC9 /* Fonts */,
 				96E048081BBB82600017DDC9 /* AppDelegate.swift */,
 				96E0483A1BBB8A540017DDC9 /* TipTableViewController.swift */,
@@ -157,15 +152,6 @@
 				96E0484F1BBCBA3A0017DDC9 /* A little sunshine.ttf */,
 			);
 			name = Fonts;
-			sourceTree = "<group>";
-		};
-		96E048591BBE02090017DDC9 /* Tableview Cells */ = {
-			isa = PBXGroup;
-			children = (
-				96E048571BBDFF9A0017DDC9 /* tipSliderTableViewCell.swift */,
-				96E048551BBDFF8B0017DDC9 /* mealPriceTableViewCell.swift */,
-			);
-			name = "Tableview Cells";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -304,11 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E048561BBDFF8B0017DDC9 /* mealPriceTableViewCell.swift in Sources */,
 				96E0483D1BBB8A7D0017DDC9 /* GroupViewController.swift in Sources */,
 				96E048091BBB82600017DDC9 /* AppDelegate.swift in Sources */,
 				96E0483B1BBB8A540017DDC9 /* TipTableViewController.swift in Sources */,
-				96E048581BBDFF9A0017DDC9 /* tipSliderTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
